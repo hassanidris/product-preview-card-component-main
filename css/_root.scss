@@ -1,0 +1,21 @@
+
+/* ----------------  Root Section ---------------- */
+
+:root {
+
+    //  ### Primary
+    --clr-darkCyan-400: hsl(158, 36%, 37%);
+    --clr-cream-200: hsl(30, 38%, 92%);
+
+    //  ### Neutral
+    --veryDarkBlue-900: hsl(212, 21%, 14%);
+    --darkGrayishBlue-400: hsl(228, 12%, 48%);
+    --white-100: hsl(0, 0%, 100%);
+
+    //  ## Typography
+    --ff-fraunces: 'Fraunces', serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+}

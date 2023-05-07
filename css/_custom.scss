@@ -1,0 +1,30 @@
+
+
+/* ----------------  Custom Section ---------------- */
+
+.product {
+    --content-padding: 1.5rem;
+    --content-spacing: 1rem;
+
+    background-color: var(--white-100);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    &__content {
+        display: grid;
+        gap: var(--content-spacing);
+        padding: var(--content-padding);
+    }
+
+    &__category {
+        font-size: 0.8125rem;
+        letter-spacing: 0.3125rem;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-family: var(--ff-fraunces);
+        color: var(--veryDarkBlue-900);
+    }
+}

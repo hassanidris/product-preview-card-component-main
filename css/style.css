@@ -1,0 +1,121 @@
+/* ----------------  Root Section ---------------- */
+:root {
+  --clr-darkCyan-400: hsl(158, 36%, 37%);
+  --clr-cream-200: hsl(30, 38%, 92%);
+  --veryDarkBlue-900: hsl(212, 21%, 14%);
+  --darkGrayishBlue-400: hsl(228, 12%, 48%);
+  --white-100: hsl(0, 0%, 100%);
+  --ff-fraunces: "Fraunces", serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+  --fw-normal: 500;
+  --fw-bold: 700;
+}
+
+/* ----------------  Reset Section ---------------- */
+/* Source of the reset code: https://www.joshwcomeau.com/css/custom-css-reset/ */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+  line-height: 1;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* ----------------  Global Section ---------------- */
+body {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-normal);
+  font-size: 0.875rem;
+  color: var(--darkGrayishBlue-400);
+  background-color: var(--clr-cream-200);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+/* ----------------  Utilities Section ---------------- */
+.prices-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ----------------  Custom Section ---------------- */
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+  background-color: var(--white-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.product__content {
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+.product__category {
+  font-size: 0.8125rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+.product__title {
+  font-size: 2rem;
+  font-family: var(--ff-fraunces);
+  color: var(--veryDarkBlue-900);
+}/*# sourceMappingURL=style.css.map */
