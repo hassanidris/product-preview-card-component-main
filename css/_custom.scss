@@ -1,14 +1,21 @@
 
 
-/* ----------------  Custom Section ---------------- */
+/* ----------------  Custom Styling ---------------- */
 
 .product {
     --content-padding: 1.5rem;
     --content-spacing: 1rem;
 
-    background-color: var(--white-100);
+    display: grid;
+    background-color: var(--white-nut-100);
     border-radius: 0.5rem;
     overflow: hidden;
+    max-width: 600px;
+
+    @media (min-width: 650px) {
+        --content-padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 
     &__content {
         display: grid;
@@ -25,6 +32,45 @@
     &__title {
         font-size: 2rem;
         font-family: var(--ff-fraunces);
-        color: var(--veryDarkBlue-900);
+        color: var(--veryDarkBlue-nut-900);
+    }
+
+    &__current-price {
+        font-size: 2rem;
+        font-family: var(--ff-fraunces);
+        color: var(--clr-darkCyan-prm-400);
+    }
+
+    &__btn {
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        border-radius: 0.5rem;
+        padding: 0.75em 1.5em;
+        background-color: var(--clr-darkCyan-prm-400);
+        color: var(--white-nut-100);
+        font-weight: var(--fw-bold);
+        font-size: 0.925rem;
+
+        &:is(:hover, :focus) {
+            background-color: var(--clr-darkCyan-prm-hover);
+        }
+
+        &[data-icon="cart-icon"]::before {
+            content: "";
+            background-image: url("../images/icon-cart.svg");
+            width: 15px;
+            height: 16px;
+        }
     }
 }
+
+/* ----------------  End of Custom Styling ---------------- */
+
+/* 
+---
+-- */ 

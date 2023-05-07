@@ -1,14 +1,20 @@
 
 
-/* ----------------  Global Section ---------------- */
+/* ----------------  Global Styling ---------------- */
 
 body {
     font-family: var(--ff-montserrat);
     font-weight: var(--fw-normal);
     font-size: 0.875rem;
-    color: var(--darkGrayishBlue-400);
-    background-color: var(--clr-cream-200);
+    color: var(--darkGrayishBlue-nut-400);
+    background-color: var(--clr-cream-prm-200);
     display: grid;
     place-content: center;
     margin: 1rem;
 }
+
+/* ----------------  End of Global Styling ---------------- */
+
+/* 
+---
+-- */ 
